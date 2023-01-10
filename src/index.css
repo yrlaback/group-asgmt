@@ -3,9 +3,11 @@
 /*  COLORS
 
 #998599
-#604766 
+#604766
+#8b778b
+#312135
 
-/* BODY */
+/* BODY / APP */
 
 * {
   margin: 0;
@@ -25,4 +27,77 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+/* LINKS */ 
+.header__links { 
+  width: 100%;
+  list-style: none;
+  overflow: hidden;
+  display: flex;
+  font-size: 1rem;
+  letter-spacing: 4px;
+  font-weight: 600;
+  margin: 1rem;
+}
+
+a:link { 
+  color: #604766;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #604766;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #312135;
+}
+
+/* HEADER */
+
+header {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0 1rem 0;
+  background-color: #8b778b;
+}
+
+.header li {
+  margin: 2rem;
+}
+.header li:hover {
+  cursor: pointer;
+  color: #312135;
+}
+
+/* WELCOME / HOME PAGE */
+
+.welcome-container {
+  width: 40vw;
+  min-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3rem;
+  border-radius: 2.5em;
+  margin-bottom: 1.3rem;
+}
+
+.welcome-container h1 {
+  color: #312135;
+  margin-bottom: 1rem;
+}
+
+/* FOOTER */
+
+.footer {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: felx-start;
+  padding: 1rem 0 1rem 0;
+  background-color: #8b778b;
 }
