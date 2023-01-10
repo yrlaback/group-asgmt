@@ -89,6 +89,9 @@ header {
 .welcome-container h1 {
   color: #312135;
   margin-bottom: 1rem;
+  letter-spacing: 2px;
+  font-size: 1.8rem;
+  font-weight: 500;
 }
 
 /* FOOTER */
