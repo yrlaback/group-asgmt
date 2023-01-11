@@ -4,6 +4,7 @@ import Button from "./Button";
 
 const Signup = ({signup}) => {
     const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     
     return (
@@ -14,6 +15,10 @@ const Signup = ({signup}) => {
                 <input type="text" name="name" 
                     value={name} 
                     onChange={(e) => setName(e.target.value)}/>
+                
+                <label htmlFor="email">Email:</label>
+                <input type="text" name="name" value={email}
+                    onChange={(e) => setEmail(e.target.value)} />
 
                 <label htmlFor="password">Password:</label>
                 <input type="password" name="password" 
@@ -21,7 +26,7 @@ const Signup = ({signup}) => {
                     onChange={(e) => setPassword(e.target.value)}/>
 
                 <Link to="/welcome">
-                    <Button>Log In</Button>
+                    <Button>Sign UP!</Button>
                 </Link>
             </form>
         </div>
