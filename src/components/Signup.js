@@ -11,22 +11,22 @@ const Signup = ({signup}) => {
         <div>
             <form className="signup-container">
                 <h3>Sign up here!</h3>
-                <label htmlFor="name">Name:</label>
+                <label htmlFor="name"><p>Name:</p></label>
                 <input type="text" name="name" 
                     value={name} 
                     onChange={(e) => setName(e.target.value)}/>
                 
-                <label htmlFor="email">Email:</label>
+                <label htmlFor="email"><p>Email:</p></label>
                 <input type="text" name="name" value={email}
                     onChange={(e) => setEmail(e.target.value)} />
 
-                <label htmlFor="password">Password:</label>
+                <label htmlFor="password"><p>Password:</p></label>
                 <input type="password" name="password" 
                     value={password} 
                     onChange={(e) => setPassword(e.target.value)}/>
 
                 <Link to="/welcome">
-                    <Button>Sign UP!</Button>
+                    <Button><p>Sign UP!</p></Button>
                 </Link>
             </form>
         </div>
