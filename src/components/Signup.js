@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import Button from "./Button";
 
-const Signup = ({signup}) => {
+const Signup = () => {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
@@ -17,7 +17,7 @@ const Signup = ({signup}) => {
                     onChange={(e) => setName(e.target.value)}/>
                 
                 <label htmlFor="email"><p>Email:</p></label>
-                <input type="text" name="name" value={email}
+                <input autoFocus type="text" name="name" value={email}
                     onChange={(e) => setEmail(e.target.value)} />
 
                 <label htmlFor="password"><p>Password:</p></label>
