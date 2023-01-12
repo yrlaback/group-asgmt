@@ -1,12 +1,30 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import Button from "./Button";
+import axios from "axios";
 
 const Signup = () => {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
+
+    const checkEmail = (users) => {
+        const user = users.find((user) => user.email === email);
+        if (user) return user;
+    };
     
+    const handelSubmit = async () => {
+        const user = await axios.get("/users")
+            .then((res) => checkEmail(res.data, email));
+
+            if(user) {
+                alert("User already exists!")
+            } else {
+                const user = {name, email, password};
+                axios.post("/users", user).then(alert("User created!"));
+            }
+    };
+
     return (
         <div>
             <form className="signup-container">
@@ -26,7 +44,7 @@ const Signup = () => {
                     onChange={(e) => setPassword(e.target.value)}/>
 
                 <Link to="/welcome">
-                    <Button><p>Sign UP!</p></Button>
+                    <Button type="submit" onClick={handelSubmit}><p>Sign UP!</p></Button>
                 </Link>
             </form>
         </div>
