@@ -1,7 +1,7 @@
 const Adventure = () => {
     return (
         <>
-        <div className="container">
+        <div className="adventure-container">
             <p>In here is our game</p>
         </div>
         </>
