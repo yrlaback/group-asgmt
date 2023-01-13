@@ -12,11 +12,11 @@ const stepSix = () => {
       </p>
       <br />
       <div className="options">
-        <Link className="options__button" to="/adventure/step7">
-          I find a williow tree!
-        </Link>
         <Link className="options__button" to="/adventure/exit">
           I make a run for it!
+        </Link>
+        <Link className="options__button" to="/adventure/step7">
+          I find a williow tree!
         </Link>
       </div>
     </div>

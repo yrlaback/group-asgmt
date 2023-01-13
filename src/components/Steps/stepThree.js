@@ -12,11 +12,11 @@ const stepThree = () => {
       </p>
       <br />
       <div className="options">
-        <Link className="options__button" to="/adventure/step4">
-          Pine
-        </Link>
         <Link className="options__button" to="/adventure/exit">
           Gomortega
+        </Link>
+        <Link className="options__button" to="/adventure/step4">
+          Pine
         </Link>
       </div>
     </div>

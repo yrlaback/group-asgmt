@@ -12,11 +12,11 @@ const stepFour = () => {
       </p>
       <br />
       <div className="options">
-        <Link className="options__button" to="/adventure/step5">
-          I start walking
-        </Link>
         <Link className="options__button" to="/adventure/exit">
           I check my phone
+        </Link>
+        <Link className="options__button" to="/adventure/step5">
+          I start walking
         </Link>
       </div>
     </div>
