@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const stepFour = () => {
   return (
-    <div>
+    <div className="card">
       <h5>Pine tree</h5>
       <br />
       <p>

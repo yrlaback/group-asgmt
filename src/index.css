@@ -23,7 +23,6 @@ body {
 
 .container {
   width: 100%;
-  min-height: 100vh;
   margin: 2rem;
   display: flex;
   justify-content: center;
@@ -152,7 +151,10 @@ header {
   padding: 1rem 0 1rem 0;
   background-color: #8b778b;
   color: #312135;
-  margin-bottom: 2rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px; /* Height of the footer */
 }
 
 /* BUTTON */
@@ -188,4 +190,10 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
