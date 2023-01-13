@@ -10,6 +10,7 @@ import StepTwo from "./components/Steps/stepTwo";
 import StepThree from "./components/Steps/stepThree";
 import StepFour from "./components/Steps/stepFour";
 import StepFive from "./components/Steps/stepFive";
+import StepSix from "./components/Steps/stepSix";
 import ExitStep from "./components/Steps/exit";
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
           <Route path="/adventure/step3" exact element={<StepThree />} />
           <Route path="/adventure/step4" exact element={<StepFour />} />
           <Route path="/adventure/step5" exact element={<StepFive />} />
+          <Route path="/adventure/step6" exact element={<StepSix />} />
           <Route path="/adventure/exit" exact element={<ExitStep />} />
         </Routes>
       </div>
