@@ -3,17 +3,21 @@ import { Link } from "react-router-dom";
 const stepFour = () => {
   return (
     <div>
-      <h5>You're lost in the woods,</h5>
+      <h5>Pine tree</h5>
       <br />
       <p>
-        without a phone and it's quite dark outside, you're not really sure how
-        you got here. You don't even know what time it is. The sun is in the
-        east, is it morning or evening?
+        The pine tree is one of the most common trees in Sweden. The Gomortega
+        tree is an endemic tree to Chile and does not grow in Sweden. You need
+        to figure out which way to walk. What do you do?
       </p>
       <br />
-      <div>
-        <Link to="/adventure/step2">Morning</Link>
-        <Link to="/adventure/step3">Evening</Link>
+      <div className="options">
+        <Link className="options__button" to="/adventure/step5">
+          I start walking
+        </Link>
+        <Link className="options__button" to="/adventure/exit">
+          I check my phone
+        </Link>
       </div>
     </div>
   );

@@ -8,6 +8,7 @@ import Footer from "./components/Footer";
 import Welcome from "./components/Welcome";
 import StepTwo from "./components/Steps/stepTwo";
 import StepThree from "./components/Steps/stepThree";
+import StepFour from "./components/Steps/stepFour";
 import ExitStep from "./components/Steps/exit";
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
           <Route path="/adventure" exact element={<Adventure />} />
           <Route path="/adventure/step2" exact element={<StepTwo />} />
           <Route path="/adventure/step3" exact element={<StepThree />} />
+          <Route path="/adventure/step4" exact element={<StepFour />} />
           <Route path="/adventure/exit" exact element={<ExitStep />} />
         </Routes>
       </div>
