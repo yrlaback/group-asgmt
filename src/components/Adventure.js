@@ -1,11 +1,7 @@
+ import StepOne from "./Steps/stepOne";
+
 const Adventure = () => {
-    return (
-        <>
-        <div className="adventure-container">
-            <p>In here is our game</p>
-        </div>
-        </>
-    );
+  return <StepOne></StepOne>;
 };
 
 export default Adventure;
