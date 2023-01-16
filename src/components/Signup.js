@@ -1,6 +1,4 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
-import Button from "./Button";
 import axios from "axios";
 
 const Signup = () => {
@@ -14,7 +12,8 @@ const Signup = () => {
     };
     
     const handelSubmit = async () => {
-        const user = await axios.get("/users")
+        const user = await axios
+            .get("/users")
             .then((res) => checkEmail(res.data, email));
 
             if(user) {
@@ -42,10 +41,7 @@ const Signup = () => {
                 <input type="password" name="password" 
                     value={password} 
                     onChange={(e) => setPassword(e.target.value)}/>
-
-                <Link to="/welcome">
-                    <Button type="submit" onClick={handelSubmit}><p>Sign UP!</p></Button>
-                </Link>
+                <button className="btn" type="submit" onClick={handelSubmit}>Sign up!</button>
             </form>
         </div>
     );
