@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const stepSix = () => {
   return (
     <div className="card">
-      <h5>You climbed the hill</h5>
+      <h2>You climbed the hill</h2>
       <br />
       <p>
         and you can see everything from here! Even your house. But you're not

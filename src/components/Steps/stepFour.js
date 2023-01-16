@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const stepFour = () => {
   return (
     <div className="card">
-      <h5>Pine tree</h5>
+      <h2>Pine tree</h2>
       <br />
       <p>
         The pine tree is one of the most common trees in Sweden. The Gomortega

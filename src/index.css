@@ -2,7 +2,7 @@
 
 /*  COLORS
 
-#998599
+#998599 backgroundcolor
 #604766
 #8b778b
 #312135
@@ -17,8 +17,8 @@
 
 body {
   font-family: "Merriweather", serif;
-  background-color: #998599;
-  color: #604766;
+  background-color: #8d9967;
+  color: #8d9967;
 }
 
 .container {
@@ -43,17 +43,17 @@ body {
 }
 
 a:link {
-  color: #604766;
+  color: #697a50;
   text-decoration: none;
 }
 
 a:visited {
-  color: #604766;
+  color: #697a50;
   text-decoration: none;
 }
 
 a:hover {
-  color: #312135;
+  color: #263e31;
 }
 
 /* HEADER */
@@ -63,15 +63,11 @@ header {
   display: flex;
   justify-content: center;
   padding: 1rem 0 1rem 0;
-  background-color: #8b778b;
+  background-color: #4c5e46;
 }
 
 .header li {
   margin: 2rem;
-}
-.header li:hover {
-  cursor: pointer;
-  color: #312135;
 }
 
 /* HOME PAGE */
@@ -79,8 +75,8 @@ header {
 .home-container {
   max-width: 40vw;
   width: 100%;
-  background-color: #312135;
-  color: #998599;
+  background-color: #093923;
+  color: #8d8c6d;
   padding: 3rem;
   border-radius: 2.5em;
   margin-bottom: 1.3rem;
@@ -90,11 +86,16 @@ header {
   margin-bottom: 1rem;
 }
 
+.home-container p {
+  margin-top: 1rem;
+}
+
 /* WELCOME PAGE */
 
 .welcome-container {
   width: 40vw;
   min-width: 400px;
+  background-color: #334a36;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -104,11 +105,15 @@ header {
 }
 
 .welcome-container h2 {
-  color: #312135;
+  color: #093923;
   margin-bottom: 1rem;
   letter-spacing: 2px;
   font-size: 1.8rem;
   font-weight: 500;
+}
+
+.welcome-container p {
+  line-height: 1.8;
 }
 
 /* SIGN UP */
@@ -122,12 +127,12 @@ header {
   padding: 3rem;
   border-radius: 2.5em;
   margin-bottom: 1.3rem;
-  background-color: #8b778b;
+  background-color: #093923;
 }
 
 .signup-container h3 {
   margin-bottom: 1rem;
-  color: #312135;
+  color: #8d8c6d;
 }
 
 .signup-container input {
@@ -142,15 +147,26 @@ header {
   margin-bottom: 1rem;
 }
 
-/* FOOTER */
+/* ADVENTURE PAGE */
 
+.adventure-container {
+  max-width: 40vw;
+  width: 100%;
+  background-color: #093923;
+  color: #8d9967;
+  padding: 3rem;
+  border-radius: 2.5em;
+  margin-bottom: 1.3rem;
+}
+
+/* FOOTER */
 .footer {
   width: 100vw;
   display: flex;
   justify-content: center;
   padding: 1rem 0 1rem 0;
-  background-color: #8b778b;
-  color: #312135;
+  background-color: #4c5e46;
+  color: #8d9967;
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -164,15 +180,15 @@ header {
   height: 60px;
   margin-top: 1rem;
   font-weight: 600;
-  background-color: #604766;
-  color: #8b778b;
+  background-color: #8d9967;
+  color: #263e31;
   border: none;
   border-radius: 50px;
 }
 
 .btn:hover {
   cursor: pointer;
-  background-color: #312135;
+  background-color: #697a50;
 }
 
 .options {
@@ -184,16 +200,23 @@ header {
 
 .options__button {
   width: 150px;
-
   height: 60px;
-  background-color: goldenrod;
+  border: none;
+  border-radius: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #283306;
+  color: #263e31;
 }
 .card {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  color: #000000;
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+
 }
