@@ -2,14 +2,14 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import Button from "./Button";
 
-const Signup = ({signup}) => {
+const Signup = () => {
     const [name, setName] = useState("");
     const [password, setPassword] = useState("");
     
     return (
         <div>
             <form className="signup-container">
-                <h3>Sign up here!</h3>
+                <h3>Log in:</h3>
                 <label htmlFor="name">Name:</label>
                 <input type="text" name="name" 
                     value={name} 
