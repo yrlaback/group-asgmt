@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const stepThree = () => {
   return (
     <div className="card">
-      <h2>The sun is in the east.</h2>
+      <h2>The sun is in the east</h2>
       <br />
       <p>
         Which means it is rising and it's early morning. You look around and all
@@ -12,7 +12,7 @@ const stepThree = () => {
       </p>
       <br />
       <div className="options">
-        <Link className="options__button" to="/adventure/exit">
+        <Link className="options__button" to="/adventure/dead">
           Gomortega
         </Link>
         <Link className="options__button" to="/adventure/step4">

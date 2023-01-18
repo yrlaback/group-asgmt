@@ -16,9 +16,9 @@
 }
 
 body {
-  font-family: 'Merriweather', serif;
-  background-color: #8D9967;
-  color:  #8D9967;
+  font-family: "Merriweather", serif;
+  background-color: #8d9967;
+  color: #8d9967;
 }
 
 .container {
@@ -42,18 +42,18 @@ body {
   margin: 1rem;
 }
 
-a:link { 
-  color: #697A50;
+a:link {
+  color: #697a50;
   text-decoration: none;
 }
 
 a:visited {
-  color: #697A50;
+  color: #697a50;
   text-decoration: none;
 }
 
 a:hover {
-  color: #263E31;
+  color: #263e31;
 }
 
 /* HEADER */
@@ -63,7 +63,7 @@ header {
   display: flex;
   justify-content: center;
   padding: 1rem 0 1rem 0;
-  background-color: #4C5E46;
+  background-color: #4c5e46;
 }
 
 .header li {
@@ -95,7 +95,7 @@ header {
 .welcome-container {
   width: 40vw;
   min-width: 400px;
-  background-color: #334A36;
+  background-color: #334a36;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -153,10 +153,10 @@ header {
   max-width: 40vw;
   width: 100%;
   background-color: #093923;
-  color: #8D9967;
+  color: #8d9967;
   padding: 3rem;
   border-radius: 2.5em;
-  margin-bottom: 1.3rem; 
+  margin-bottom: 1.3rem;
 }
 
 /* FOOTER */
@@ -194,15 +194,15 @@ header {
   height: 60px;
   margin-top: 1rem;
   font-weight: 600;
-  background-color:  #8D9967;
-  color: #263E31;
+  background-color: #8d9967;
+  color: #263e31;
   border: none;
   border-radius: 50px;
 }
 
 .btn:hover {
   cursor: pointer;
-  background-color: #697A50;
+  background-color: #697a50;
 }
 .options {
   width: 50%;
@@ -212,8 +212,8 @@ header {
 }
 
 .options__button {
-  width: 150px;
-  height: 60px;
+  width: 300px;
+  height: 80px;
   border: none;
   border-radius: 50px;
   display: flex;
@@ -231,5 +231,4 @@ header {
   margin-top: 50px;
   margin-left: 50px;
   margin-right: 50px;
-
 }

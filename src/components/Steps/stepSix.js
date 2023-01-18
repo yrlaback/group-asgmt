@@ -6,13 +6,13 @@ const stepSix = () => {
       <h2>You climbed the hill</h2>
       <br />
       <p>
-        and you can see everything from here! Even your house. But you're not
+        And you can see everything from here! Even your house. But you're not
         sure if you'll be able to walk all the way home since you feel a
         headache coming. What do you do?
       </p>
       <br />
       <div className="options">
-        <Link className="options__button" to="/adventure/exit">
+        <Link className="options__button" to="/adventure/dead">
           I make a run for it!
         </Link>
         <Link className="options__button" to="/adventure/step7">

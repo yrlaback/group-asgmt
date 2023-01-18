@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const stepFive = () => {
   return (
     <div className="card">
-      <h5>You start to walk</h5>
+      <h2>You start to walk</h2>
       <br />
       <p>
         Because you do not have your phone to check for directions. When you
@@ -16,7 +16,7 @@ const stepFive = () => {
         <Link className="options__button" to="/adventure/step6">
           I'll go right!
         </Link>
-        <Link className="options__button" to="/adventure/exit">
+        <Link className="options__button" to="/adventure/dead">
           I'll go left!
         </Link>
       </div>
