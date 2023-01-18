@@ -18,6 +18,7 @@ import StepEight from "./components/Steps/stepEight";
 import StepTen from "./components/Steps/stepTen";
 import ExitStep from "./components/Steps/exit";
 import DeadStep from "./components/Steps/dead";
+import StepEleven from "./components/Steps/stepEleven";
 
 function App() {
   return (
@@ -44,6 +45,7 @@ function App() {
           <Route path="/adventure/step10" exact element={<StepTen />} />
           <Route path="/adventure/exit" exact element={<ExitStep />} />
           <Route path="/adventure/dead" exact element={<DeadStep />} />
+          <Route path="/adventure/step11" exact element={<StepEleven />} />
         </Routes>
       </div>
       <div>
