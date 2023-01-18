@@ -6,7 +6,7 @@ const deadStep = () => {
       <h2>Unfortunately, you are dead!</h2>
       <br />
       <p>
-        Your answer is incorrect, do you wanna paly again? click the button
+        Your answer is incorrect, do you wanna play again? Click the button
         below
       </p>
       <br />
