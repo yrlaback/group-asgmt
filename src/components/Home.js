@@ -16,7 +16,7 @@ const Home = () => {
                 flexDirection:"column",
                 marginTop:"2rem",
             }}>
-                <img src={forest} alt="Forest with some sun" height={450}  width={800}/>
+                <img src={forest} alt="Forest with some sun"/>
             </div>
         </div>
     );
