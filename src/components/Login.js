@@ -41,7 +41,7 @@ const Login = () => {
     return (
         <div>
             <form className="signup-container">
-                <h3>Love to see you here!</h3>
+                <h3>Please log in before playing:</h3>
                 <label htmlFor="email"><p>Email:</p></label>
                 <input autoFocus type="text" name="name" value={email}
                 onChange={(e) => setEmail(e.target.value)}/>
