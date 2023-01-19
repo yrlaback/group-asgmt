@@ -7,15 +7,15 @@
       "password": 12345
     },
     {
-      "name": "",
-      "email": "",
-      "password": "",
-      "id": 2
-    },
-    {
       "name": "fefe",
       "email": "ye@gmail.com",
       "password": "65421",
+      "id": 2
+    },
+    {
+      "name": "Anna",
+      "email": "anna@msn.se",
+      "password": "12345",
       "id": 3
     }
   ]

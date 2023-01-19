@@ -159,8 +159,6 @@ header {
   margin-bottom: 1.3rem;
 }
 
-/* FOOTER */
-
 /* ADVENTURE PAGE */
 
 .adventure-container {
@@ -205,6 +203,7 @@ header {
   background-color: #697a50;
 }
 .options {
+  margin-right: 1rem;
   width: 50%;
   display: flex;
   flex-direction: row;
@@ -212,6 +211,7 @@ header {
 }
 
 .options__button {
+  margin-left: 1rem;
   width: 300px;
   height: 80px;
   border: none;
@@ -220,14 +220,23 @@ header {
   align-items: center;
   justify-content: center;
   background-color: #283306;
-  color: #263e31;
+  color: #8d9967;
 }
+
+/* CONTAINER FOR GAMEPLAY*/
+
 .card {
+  max-width: 80vw;
+  width: 100%;
+  background-color: #697a50;
+  color: #093923;
+  padding: 3rem;
+  border-radius: 2.5em;
+  margin-bottom: 1.3rem;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  color: #000000;
   margin-top: 50px;
   margin-left: 50px;
   margin-right: 50px;

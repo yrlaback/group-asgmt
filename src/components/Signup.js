@@ -21,13 +21,13 @@ const Signup = () => {
             } else {
                 const user = {name, email, password};
                 axios.post("/users", user).then(alert("User created!"));
-            }
+            };
     };
 
     return (
         <div>
             <form className="signup-container">
-                <h3>Sign up here!</h3>
+                <h3>I'm happy you want to sign up!</h3>
                 <label htmlFor="name"><p>Name:</p></label>
                 <input type="text" name="name" 
                     value={name} 

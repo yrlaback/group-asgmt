@@ -1,3 +1,5 @@
+import forest from "../Images/forest.jpg"
+
 const Home = () => {
     return (
         <div className="home-container">
@@ -7,6 +9,15 @@ const Home = () => {
             <p>Have you played the game before? Go ahead and choose Log In above.</p>
             <p>Never played the game? Please choose Sign Up before Log In. 
             </p>
+            <div style={{
+                display:"flex",
+                justifyContent:"center",
+                alignItems:"center",
+                flexDirection:"column",
+                marginTop:"2rem",
+            }}>
+                <img src={forest} alt="Forest with some sun" height={450}  width={800}/>
+            </div>
         </div>
     );
 };

@@ -19,6 +19,7 @@ import StepTen from "./components/Steps/stepTen";
 import ExitStep from "./components/Steps/exit";
 import DeadStep from "./components/Steps/dead";
 import StepEleven from "./components/Steps/stepEleven";
+import PrivateRoute from "./components/PrivateRoute";
 
 function App() {
   return (
@@ -32,20 +33,90 @@ function App() {
           <Route path="/signup" exact element={<Signup />} />
           <Route path="/welcome" exact element={<Welcome />} />
           <Route path="/login" exact element={<Login />} />
-          <Route path="/adventure" exact element={<Adventure />} />
-          <Route path="/adventure/step1" exact element={<StepOne />} />
-          <Route path="/adventure/step2" exact element={<StepTwo />} />
-          <Route path="/adventure/step3" exact element={<StepThree />} />
-          <Route path="/adventure/step4" exact element={<StepFour />} />
-          <Route path="/adventure/step5" exact element={<StepFive />} />
-          <Route path="/adventure/step6" exact element={<StepSix />} />
-          <Route path="/adventure/step7" exact element={<StepSeven />} />
-          <Route path="/adventure/step8" exact element={<StepEight />} />
-          <Route path="/adventure/step9" exact element={<StepNine />} />
-          <Route path="/adventure/step10" exact element={<StepTen />} />
-          <Route path="/adventure/exit" exact element={<ExitStep />} />
-          <Route path="/adventure/dead" exact element={<DeadStep />} />
-          <Route path="/adventure/step11" exact element={<StepEleven />} />
+          <Route path="/adventure"  
+            element={
+              <PrivateRoute>
+                <Adventure />
+              </PrivateRoute>}
+          />
+          <Route path="/adventure/step1" 
+            element={
+              <PrivateRoute>
+                <StepOne />
+              </PrivateRoute>} 
+          />
+          <Route path="/adventure/step2" 
+            element={
+              <PrivateRoute>
+                <StepTwo />
+              </PrivateRoute>}
+          />
+          <Route path="/adventure/step3" 
+            element={
+              <PrivateRoute>
+                <StepThree />
+              </PrivateRoute>
+            } />
+          <Route path="/adventure/step4" 
+            element={
+              <PrivateRoute>
+                <StepFour />
+              </PrivateRoute>
+            } />
+          <Route path="/adventure/step5" 
+            element={
+              <PrivateRoute>
+                <StepFive />
+              </PrivateRoute>
+            } />
+          <Route path="/adventure/step6" 
+            element={
+              <PrivateRoute>
+                <StepSix />
+              </PrivateRoute>
+            } />
+          <Route path="/adventure/step7" 
+            element={
+              <PrivateRoute>
+                <StepSeven />
+              </PrivateRoute>
+            } />
+          <Route path="/adventure/step8" 
+            element={
+              <PrivateRoute>
+                <StepEight />
+              </PrivateRoute>
+            } />
+          <Route path="/adventure/step9" 
+            element={
+              <PrivateRoute>
+                <StepNine />
+              </PrivateRoute>
+            } />
+          <Route path="/adventure/step10" 
+            element={
+              <PrivateRoute>
+                <StepTen />
+              </PrivateRoute>
+            } />
+          <Route path="/adventure/exit" 
+            element={
+              <PrivateRoute>
+                <ExitStep />
+              </PrivateRoute>
+            } />
+          <Route path="/adventure/dead" 
+            element={
+            <PrivateRoute>
+              <DeadStep />
+            </PrivateRoute>
+          } />
+          <Route path="/adventure/step11" 
+            element={
+              <PrivateRoute>
+                <StepEleven />
+              </PrivateRoute>
+            } />
         </Routes>
       </div>
       <div>
